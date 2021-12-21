@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 // styles
 const pageStyles = {
@@ -133,6 +134,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle='Home Page'>
       <p>I'm making this by following the Gatsby tutorial</p>
+      <StaticImage
+        alt="Get ready for MMA"
+        src="../images/me.jpg"
+      />
     </Layout>
     // <main style={pageStyles}>
     //   <title>Home Page</title>
